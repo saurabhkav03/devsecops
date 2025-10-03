@@ -1,0 +1,24 @@
+
+> webapp-backend@1.0.0 dev
+> nodemon src/app.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+info: MongoDB connected successfully {"timestamp":"2025-10-03T05:32:00.453Z"}
+info: Server running on port 5000 {"timestamp":"2025-10-03T05:32:00.460Z"}
+info: Environment: development {"timestamp":"2025-10-03T05:32:00.460Z"}
+info: GET /health - 127.0.0.1 {"timestamp":"2025-10-03T05:32:00.634Z"}
+info: SIGTERM received, shutting down gracefully {"timestamp":"2025-10-03T05:35:28.277Z"}
+/root/devsecops-project/applications/webapp/backend/node_modules/mongoose/lib/connection.js:856
+    throw new MongooseError('Connection.prototype.close() no longer accepts a callback');
+          ^
+
+MongooseError: Connection.prototype.close() no longer accepts a callback
+    at NativeConnection.close (/root/devsecops-project/applications/webapp/backend/node_modules/mongoose/lib/connection.js:856:11)
+    at process.<anonymous> (/root/devsecops-project/applications/webapp/backend/src/app.js:521:23)
+    at process.emit (node:events:517:28)
+
+Node.js v18.20.8
